@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: cornflowerblue;
+    width: 100vw;
+}
+.data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    padding: 3px;
+}
+.form{
+    border: 3px  black solid ;
+    width: 300px;
+    background-color:mediumspringgreen;
+    margin-top: 50px;
+    padding: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 30px;
+    font-style: oblique;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.table{
+    border: 3px solid black;
+    padding: 3px;
+    width: max-content;
+    text-align: center;
+}
+
+th,td{
+    border: 3px solid black;
+    padding: 3px;
+}
+.tab{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}

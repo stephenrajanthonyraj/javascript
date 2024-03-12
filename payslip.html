@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payslip</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <link rel="stylesheet" href="./css/payslip.css">
+</head>
+<body>
+    <div class="data ">
+    <div class="form">
+        <form>
+            <label for="pay">Basic pay</label><br>
+            <input type="number" id="pay"><br>
+            <label for="hra">HRA</label><br>
+            <input type="text" id="hra"><br>
+            <label for="da">DA</label><br>
+            <input type="text" id="da"><br>
+            <label for="travel">Travelling</label><br>
+            <input type="text" id="travel"><br>
+            <label for="pf">PF</label><br>
+            <input type="text" id="pf"><br> 
+            <label for="gross">Gross Salary</label><br>
+            <input type="text" id="gross"><br>
+            <label for="net">Net Salary</label><br>
+            <input type="text" id="net"><br>
+        <div >
+            <button id="calculate" class="btn bg-secondary text-white mt-3">Calculate</button>
+            <button id="print" class="btn bg-secondary text-white mt-3 ms-3">Print</button>
+        </div>
+        </form>
+    </div>
+    </div>
+    <div class="tab">
+        <div class="table bg-secondary" >
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Basic Pay</th>
+                        <th>HRA</th>
+                        <th>DA</th>
+                        <th>Travel</th>
+                        <th>PF</th>
+                        <th>Gross</th>
+                        <th>Net Salary</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                   
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>    
+    <script src="./payslip.js">
+    //     let calculate = (e) => {
+    //         e.preventDefault();
+    //         let basicPayValue = parseFloat(document.getElementById("pay").value);
+    //         let hraValue = basicPayValue * (15 / 100);
+    //         let daValue = basicPayValue * (5 / 100);
+    //         let travellingValue = basicPayValue * (15 / 100);
+    //         let pfValue = basicPayValue * (15 / 100);
+    //         let grossSalaryValue = basicPayValue + hraValue + daValue + travellingValue + pfValue;
+    //         let netSalaryValue = grossSalaryValue - pfValue;
+
+    //         document.getElementById("hra").value = hraValue;
+    //         document.getElementById("da").value = daValue;
+    //         document.getElementById("travel").value = travellingValue;
+    //         document.getElementById("pf").value = pfValue;
+    //         document.getElementById("gross").value = grossSalaryValue;
+    //         document.getElementById("net").value = netSalaryValue;
+    //     };
+
+    //   let cal=document.getElementById("calculate").addEventListener("click", calculate);
+
+    // let print=document.getElementById("print");
+    // let table=document.getElementById("tbody");
+   
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+</html>
